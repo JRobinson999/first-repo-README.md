@@ -17,4 +17,4 @@ Secure Submission: Your information is important to us. The form uses secure pro
 
 Engaging Call to Action: The bold "SUBMIT" button invites you to take the first step toward your musical journey. Plus, it changes color on hover, giving a tactile feel to the interaction!
 
-So whether you’re a budding singer or looking to refine your skills, this registration form is here to help you get started on your path to vocal excellence. Let’s make beautiful music together! 
+So whether you’re a singer or looking to refine your skills, this registration form is here to help you get started on your path to vocal excellence. Let’s make beautiful music together! 
