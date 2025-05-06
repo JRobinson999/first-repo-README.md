@@ -37,7 +37,7 @@
             padding: 20px;
             border-radius: 6px;
             background: #ffffff;
-            box-shadow: 0 0 8px  #00b4cc; 
+            box-shadow: 0 0 8px #00b4cc; 
         }
         .banner {
             position: relative;
@@ -109,73 +109,71 @@
                 width: calc(50% - 20px);
             }
             .name-item div input {
-                width:97%;
+                width: 97%;
             }
             .name-item div label {
-                display:block;
-                padding-bottom:5px;
+                display: block;
+                padding-bottom: 5px;
             }
         }
     </style>
 </head>
 <body>
     <div class="testbox">
-        <form action="/" method="POST">
+        <form action="/" method="POST" class="bg-light p-4 rounded shadow">
             <div class="banner">
-                <h1>Voice Lessons Registration Form</h1>
+                <h1 class="text-white">Voice Lessons Registration Form</h1>
             </div>
             <p>Fill out the form below to register for voice lessons.</p>
-            <div class="item">
-                <label for="name">Name<span>*</span></label>
-                <input id="name" type="text" name="name" required/>
+            <div class="form-group item">
+                <label for="name">Name<span class="text-danger">*</span></label>
+                <input id="name" type="text" name="name" class="form-control" required />
             </div>
-            <div class="item">
-                <label for="email">Email Address<span>*</span></label>
-                <input id="email" type="email" name="email" required/>
+            <div class="form-group item">
+                <label for="email">Email Address<span class="text-danger">*</span></label>
+                <input id="email" type="email" name="email" class="form-control" required />
             </div>
-            <div class="item">
-                <label for="address">Address<span>*</span></label>
-                <input id="address" type="text" name="address" required/>
+            <div class="form-group item">
+                <label for="address">Address<span class="text-danger">*</span></label>
+                <input id="address" type="text" name="address" class="form-control" required />
             </div>
-            <div class="item">
-                <label for="city">City<span>*</span></label>
-                <input id="city" type="text" name="city" required/>
+            <div class="form-group item">
+                <label for="city">City<span class="text-danger">*</span></label>
+                <input id="city" type="text" name="city" class="form-control" required />
             </div>
-            <div class="item">
-                <label for="state">State<span>*</span></label>
-                <input id="state" type="text" name="state" required/>
+            <div class="form-group item">
+                <label for="state">State<span class="text-danger">*</span></label>
+                <input id="state" type="text" name="state" class="form-control" required />
             </div>
-            <div class="item">
-                <label for="zip">Zip<span>*</span></label>
-                <input id="zip" type="text" name="zip" required/>
+            <div class="form-group item">
+                <label for="zip">Zip<span class="text-danger">*</span></label>
+                <input id="zip" type="text" name="zip" class="form-control" required />
             </div>
-            <div class="item">
-                <label for="phone">Phone<span>*</span></label>
-                <input id="phone" type="tel" name="phone" required/>
+            <div class="form-group item">
+                <label for="phone">Phone<span class="text-danger">*</span></label>
+                <input id="phone" type="tel" name="phone" class="form-control" required />
             </div>
-            <div class="item">
-                <label for="bdate">Date of Birth<span>*</span></label>
-                <input id="bdate" type="date" name="bdate" required/>
+            <div class="form-group item">
+                <label for="bdate">Date of Birth<span class="text-danger">*</span></label>
+                <input id="bdate" type="date" name="bdate" class="form-control" required />
             </div>
-            <div class="question">
-                <label>Gender</label>
-                <div class="question-answer">
-                    <div>
-                        <input type="radio" value="male" id="radio_1" name="gender" required/>
-                        <label for="radio_1" class="radio"><span>Male</span></label>
-                    </div>
-                    <div>
-                        <input type="radio" value="female" id="radio_2" name="gender" required/>
-                        <label for="radio_2" class="radio"><span>Female</span></label>
-                    </div>
+            <fieldset class="form-group">
+                <legend>Gender<span class="text-danger">*</span></legend>
+                <div class="form-check">
+                    <input type="radio" value="male" id="radio_1" name="gender" class="form-check-input" required />
+                    <label for="radio_1" class="form-check-label">Male</label>
                 </div>
-            </div>
-            <div class="item">
+                <div class="form-check">
+                    <input type="radio" value="female" id="radio_2" name="gender" class="form-check-input" required />
+                    <label for="radio_2" class="form-check-label">Female</label>
+                </div>
+            </fieldset>
+            <div class="form-group item">
                 <label for="experience">Previous Singing Experience:</label>
-                <textarea id="experience" name="experience"></textarea>
+                <textarea id="experience" name="experience" class="form-control"></textarea>
             </div>
             <div class="btn-block">
-                <button type="submit">SUBMIT</button>
+                <button type="submit" class="btn btn-success">SUBMIT</button>
             </div>
         </form>
     </div>
